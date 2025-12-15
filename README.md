@@ -1,7 +1,5 @@
 Wordle in Scala-
 A command-line Wordle game with multiple difficulty levels and statistics tracking.
-Quick Start->
-bashscala-cli source.scala
 Features->
 4 difficulty levels (Easy to Expert)
 6 word categories (Animals, Nature, Food, Tech, Music, General)
