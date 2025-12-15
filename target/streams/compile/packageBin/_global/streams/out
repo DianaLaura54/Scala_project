@@ -1,0 +1,31 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging E:\AN 4\Scala_project\target\scala-2.13\wordle-game_2.13-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$Colors$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$Colors$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$Difficulty.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$Difficulty.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$Easy$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$Easy$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$Expert$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$Expert$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$GameState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$GameState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$GameState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$GameState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$GameStats$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$GameStats$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$GameStats.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$GameStats.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$Hard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$Hard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$Medium$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$Medium$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$WordleGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$WordleGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced$WordList$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced$WordList$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WordleAdvanced.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\AN 4\Scala_project\target\scala-2.13\classes\WordleAdvanced.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

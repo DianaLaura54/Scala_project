@@ -138,9 +138,9 @@ object WordleAdvanced {
     }
     
     def printWelcome(): Unit = {
-      println(s"\n${Colors.BOLD}╔════════════════════════════════════╗${Colors.RESET}")
-      println(s"${Colors.BOLD}║     WORDLE ADVANCED v2.0           ║${Colors.RESET}")
-      println(s"${Colors.BOLD}╚════════════════════════════════════╝${Colors.RESET}\n")
+      println("====================================")
+      println("     WORDLE ADVANCED v2.0          ")
+      println("====================================")
       println("Guess the 5-letter word!")
       println(s"${Colors.GREEN} GREEN ${Colors.RESET} = correct letter in correct position")
       println(s"${Colors.YELLOW} YELLOW ${Colors.RESET} = correct letter in wrong position")
