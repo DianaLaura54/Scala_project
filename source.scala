@@ -4,7 +4,7 @@ import scala.io.Source
 
 object WordleAdvanced {
   
-  // ANSI color codes
+
   object Colors {
     val GREEN = "\u001b[42m\u001b[30m"
     val YELLOW = "\u001b[43m\u001b[30m"
@@ -15,7 +15,7 @@ object WordleAdvanced {
     val RED = "\u001b[31m"
   }
   
-  // Game statistics
+  
   case class GameStats(
     gamesPlayed: Int = 0,
     gamesWon: Int = 0,
@@ -51,7 +51,7 @@ object WordleAdvanced {
     }
   }
   
-  // Difficulty levels
+
   sealed trait Difficulty {
     def maxAttempts: Int
     def hintsAvailable: Int
@@ -82,7 +82,7 @@ object WordleAdvanced {
     val name = "Expert"
   }
   
-  // Extended word list with categories
+ 
   object WordList {
     val animals = List("TIGER", "HORSE", "WHALE", "EAGLE", "PANDA", "SHARK", "SNAKE", "BEARS", "ZEBRA", "KOALA")
     val nature = List("BEACH", "RIVER", "CLOUD", "STONE", "PLANT", "OCEAN", "STORM", "GRASS", "FLAME", "EARTH")
@@ -104,17 +104,17 @@ object WordleAdvanced {
     }
   }
   
-  // Game state
+
   case class GameState(
     targetWord: String,
     difficulty: Difficulty,
     attempts: Int = 0,
     hintsUsed: Int = 0,
     guessHistory: List[String] = List.empty,
-    letterStatuses: Map[Char, String] = Map.empty // Track letter statuses for keyboard
+    letterStatuses: Map[Char, String] = Map.empty 
   )
   
-  // Main game class
+
   class WordleGame(var stats: GameStats) {
     
     def play(): Unit = {
@@ -239,12 +239,12 @@ object WordleAdvanced {
             
             if (guess == targetWord) {
               won = true
-              println(s"\n${Colors.GREEN}${Colors.BOLD}🎉 Congratulations! You won in ${state.attempts} attempts!${Colors.RESET}")
+              println(s"\n${Colors.GREEN}${Colors.BOLD} Congratulations! You won in ${state.attempts} attempts!${Colors.RESET}")
               println(s"The word was: ${Colors.BOLD}$targetWord${Colors.RESET}")
               stats = stats.recordWin(state.attempts)
               displayQuickStats()
             } else if (state.attempts == difficulty.maxAttempts) {
-              println(s"\n${Colors.RED}${Colors.BOLD}😞 Game Over!${Colors.RESET}")
+              println(s"\n${Colors.RED}${Colors.BOLD} Game Over!${Colors.RESET}")
               println(s"The word was: ${Colors.BOLD}$targetWord${Colors.RESET}")
               stats = stats.recordLoss()
             }
@@ -256,7 +256,7 @@ object WordleAdvanced {
     }
     
     def isValidWord(guess: String): Boolean = {
-      // Check if the guess is in any of our word lists
+     
       WordList.all.contains(guess)
     }
     
@@ -275,7 +275,7 @@ object WordleAdvanced {
       val targetUsed = Array.fill(5)(false)
       val guessStatus = Array.fill(5)("")
       
-      // First pass: mark greens
+     
       for (i <- 0 until 5) {
         if (guess(i) == target(i)) {
           guessStatus(i) = Colors.GREEN
@@ -284,7 +284,7 @@ object WordleAdvanced {
         }
       }
       
-      // Second pass: mark yellows
+   
       for (i <- 0 until 5) {
         if (guessStatus(i).isEmpty) {
           val char = guess(i)
@@ -295,13 +295,11 @@ object WordleAdvanced {
           if (foundIndex.isDefined) {
             guessStatus(i) = Colors.YELLOW
             targetUsed(foundIndex.get) = true
-            // Only update if not already green
             if (updatedStatuses.get(char) != Some(Colors.GREEN)) {
               updatedStatuses = updatedStatuses.updated(char, Colors.YELLOW)
             }
           } else {
             guessStatus(i) = Colors.GRAY
-            // Only update if not already green or yellow
             if (!updatedStatuses.contains(char)) {
               updatedStatuses = updatedStatuses.updated(char, Colors.GRAY)
             }
@@ -309,7 +307,7 @@ object WordleAdvanced {
         }
       }
       
-      // Build colored output
+      
       for (i <- 0 until 5) {
         result.append(s"${guessStatus(i)} ${guess(i)} ${Colors.RESET}")
       }
